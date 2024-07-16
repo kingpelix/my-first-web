@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>나를 소개합니다.</title>
+    <meta charset="utf-8">
+    <style>
+        h1 {
+            text-align:center;
+            text-decoration: center;
+            border-width: 5px;
+            border-color: red;
+            border-style: solid;
+
+            padding:20px;
+            margin: 20px;
+        }
+        a {
+            color:aqua;
+            text-decoration:underline;
+        }
+        .korea {
+            color: palevioletred;
+            text-decoration:none;
+        }
+        #daum {
+            color: blue;
+            text-decoration: body
+        }
+        div {
+            border: 5px solid gray;
+            display : grid;
+            grid-template-columns: 100px  1fr;
+        }
+        #gri {
+            border : 5px  solid  pink;
+
+        }
+        @media
+        (max-width: 500px){
+            #gri{
+                display:none;
+            }
+        }
+    </style>
+
+    <script>
+        document.write(1+1);
+    </script>
+</head>
+
+<body>
+
+    <h1>"노윤하 일대기."</h1>
+    
+    <div id="gri">
+        <div>ronaldo</div>
+        <div>killianmbappe</div>
+    </div>
+
+    <p>
+        <h4>"탄생: 2007 09 17"</h4><br>
+        07 라인<br>
+            -이서 <img src="lee.jpg" width="60">   
+            -라민 야말<img src="ya.webp" width="100">
+            -노윤하 <img src="cha.jpg" width="60"><br>
+        
+        let's go
+
+ 
+    </p>
+    <ul>
+        <li><a href="https://www.naver.com/"
+            class="korea"
+            title="네이버"
+            target="_blank">naver</a></li>
+         <li><a href="https://www.google.co.kr/?hl=ko&safe=active&ssui=on"
+            class="korea"
+            title="구글"
+            target="_blank">google</a></li>
+        <li><a href="https://www.daum.net/"
+            class="china"
+            id="daum"
+            target="_blank">daum</a></li>
+    </ul>
+    
+    <p>
+        <h4>"승리요정 노윤하가 응원하는 팀"</h4>
+    <ui>
+        <li>kia 타이거즈(현재 1위)</li>  <img src="do.jpeg" width="60">
+        <li>fromis_9(1티어)</li> <img src="fromis.jpg" width="100">
+    </ui>    
+
+
+   </p>
+
+   <input type="button" 
+    value="day"
+    onclick="
+    
+    if(document.querySelector('body').dataset.mode ==='night')
+    {
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color ='black';
+        document.querySelector('body').dataset.mode ='day';
+
+        this.value='day';
+    } 
+    
+    else{
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color='white';
+        document.querySelector('body').dataset.mode='night';
+
+        this.value='night';
+    }">
+    
+
+ 
+</body>
+
+</html>
